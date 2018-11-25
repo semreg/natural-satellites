@@ -1,27 +1,37 @@
 import React, { Component } from 'react';
-import logo from '../images/logo.svg';
 import '../scss/App.scss';
 
+import { data } from '../planets'
+import Navbar from './Navbar.jsx'
+import Search from './Search';
 class App extends Component {
+  getData (e) {
+    e.preventDefault()
+
+    const query = String(e.target.elements.planet_name.value)
+
+    data.map(item => {
+      item.tags.map(tag => {
+        if (tag === query) {
+          console.log(item)
+        }
+        
+        return 0
+      })
+
+      return 0
+    })
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      <>
+        <Navbar />
+        <div className="container main-container">
+          <Search method={this.getData}/>
+        </div>
+      </>
+    )
   }
 }
 

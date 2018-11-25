@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
 //Bootstrap and dependencies
-import $ from 'jquery'
 import 'popper.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
