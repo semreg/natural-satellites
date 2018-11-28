@@ -14,7 +14,7 @@ const Planet = (props) => {
             <br/>
             <strong><i className="fas fa-road"></i> Відстань до Cонця</strong>: {planet.distance}
           </p>
-          <Link to={`info/planet/${planet.planet_id}`} className="btn btn-dark btn-block">
+          <Link to={`info/planet/${planet.planet_id}`} className="btn btn-dark btn-block waves-effect">
             <i className="fas fa-chevron-right"></i> Переглянути детальну інформацію
           </Link>
         </div>
