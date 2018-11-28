@@ -12,19 +12,6 @@ import Search from './Search'
 import { data } from '../planets.js'
 
 class App extends Component {
-  getData (e) {
-    e.preventDefault()
-
-    const query = String(e.target.elements.planet_name.value)
-
-    data.forEach(item => {
-      item.tags.forEach(tag => {
-        if (tag === query) {
-          console.log(item)
-        }
-      })
-    })
-  }
 
   render() {
     return (
@@ -46,5 +33,3 @@ class App extends Component {
 }
 
 export default App;
-
-// <Search method={this.getData}/>

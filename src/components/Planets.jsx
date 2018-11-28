@@ -10,7 +10,7 @@ export default class Planets extends Component {
           const { planets_list, heading } = value
 
           if (planets_list === undefined || planets_list.length === 0) {
-            return <h1>Не має чого показувати :(</h1>
+            return <h1 className="text-center">Не має чого показувати :(</h1>
           } else {
             return (
               <>
