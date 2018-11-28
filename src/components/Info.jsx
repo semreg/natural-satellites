@@ -29,7 +29,7 @@ export default class Info extends Component {
     } else {
       return (
         <>
-          <Link to="/" className="btn btn-dark btn-sm mb-4">На головну</Link>
+          <Link to="/" className="btn btn-dark btn-sm mb-4 btn-lg">На головну</Link>
           <div className="card">
             <div className="card-header">
               {planet.name}
