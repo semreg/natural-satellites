@@ -1,15 +1,13 @@
 // React
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Provider } from './context.js'
+import { Provider } from './context'
 
 // Components and outer
 import '../scss/App.scss'
-import Index from './Index.jsx'
-import Navbar from './Navbar.jsx'
-import Info from './Info.jsx'
-import Search from './Search'
-import { data } from '../planets.js'
+import Index from './layout/Index'
+import Navbar from './layout/Navbar'
+import Info from './planets/Info'
 
 class App extends Component {
 

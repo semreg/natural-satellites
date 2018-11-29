@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Consumer } from './context.js'
-import { data } from '../planets.js'
+import { Consumer } from '../context'
+import { data } from '../../planets.js'
 
 export default class Search extends Component {
   state = {

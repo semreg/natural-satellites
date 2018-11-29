@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Consumer } from './context.js'
+import { Consumer } from '../context'
 import Planet from './Planet.jsx'
 
 export default class Planets extends Component {

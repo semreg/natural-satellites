@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Planet = (props) => {
+export default function Planet (props) {
   const { planet } = props
 
   return (
@@ -22,5 +22,3 @@ const Planet = (props) => {
     </div>
   )
 }
-
-export default Planet

@@ -1,6 +1,6 @@
 import React from 'react'
-import Planets from './Planets.jsx'
-import Search from './Search.jsx'
+import Planets from '../planets/Planets'
+import Search from '../planets/Search'
 
 export default function Index() {
   return (
