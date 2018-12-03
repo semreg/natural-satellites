@@ -1,4 +1,4 @@
-https://standardjs.com/  
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)   
 # natural-satellites
 Firstly make sure that you have Node 10.14.0 installed. Than install all the dependencies:
 ```bash
