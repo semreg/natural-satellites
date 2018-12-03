@@ -1,3 +1,4 @@
+https://standardjs.com/  
 # natural-satellites
 Firstly make sure that you have Node 10.14.0 installed. Than install all the dependencies:
 ```bash
