@@ -1,5 +1,5 @@
 // React
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Provider } from './context'
 
@@ -10,17 +10,16 @@ import Navbar from './layout/Navbar'
 import Info from './planets/Info'
 
 class App extends Component {
-
-  render() {
+  render () {
     return (
       <Provider>
         <Router>
           <React.Fragment>
             <Navbar />
-            <div className="container main-container">
+            <div className='container main-container'>
               <Switch>
-                <Route exact path="/" component={Index} />
-                <Route exact path="/info/planet/:id" component={Info} />
+                <Route exact path='/' component={Index} />
+                <Route exact path='/info/planet/:id' component={Info} />
               </Switch>
             </div>
           </React.Fragment>
@@ -30,4 +29,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App

@@ -20,7 +20,7 @@ const reducer = (state, action) => {
 export class Provider extends Component {
   state = {
     planets_list: [],
-    heading: "Усі планети та супутники",
+    heading: 'Усі планети та супутники',
     dispatch: action => this.setState(state => reducer(state, action))
   }
 

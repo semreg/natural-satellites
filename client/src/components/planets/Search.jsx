@@ -3,14 +3,15 @@ import { Consumer } from '../context'
 import { data } from '../../planets.js'
 
 export default class Search extends Component {
-  state = {
-    planet_name: ''
+  constructor (props) {
+    super(props)
+    this.state = { planet_name: '' }
   }
 
-  findPlanets = (dispatch, e) => {
+  findPlanets (dispatch, e) {
     e.preventDefault()
     let result = []
-    
+
     data.forEach(item => {
       item.tags.forEach(tag => {
         if (this.state.planet_name === tag) {
@@ -29,28 +30,28 @@ export default class Search extends Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  render() {
+  render () {
     return (
       <Consumer>
         {value => {
           const { dispatch } = value
 
           return (
-            <div className="col card card-body mb-4 p-4 search-card">
-              <h1 className="display-4 text-center">Знайти планету</h1>
-              <p className="lead text-center">Отримайте інформацію про планету чи її супутник</p>
+            <div className='col card card-body mb-4 p-4 search-card'>
+              <h1 className='display-4 text-center'>Знайти планету</h1>
+              <p className='lead text-center'>Отримайте інформацію про планету чи її супутник</p>
               <form onSubmit={this.findPlanets.bind(this, dispatch)}>
-                <div className="form-group">
-                  <input 
-                    type="text" 
-                    className="form-control form-control-lg" 
-                    placeholder="Назва планети чи супутника..." 
-                    name="planet_name" 
+                <div className='form-group'>
+                  <input
+                    type='text'
+                    className='form-control form-control-lg'
+                    placeholder='Назва планети чи супутника...'
+                    name='planet_name'
                     value={this.state.planet_name}
                     onChange={this.onChange}
                   />
                 </div>
-                <button className="btn btn-primary btn-lg btn-block mb-5 waves-effect" type="submit">Шукати</button>
+                <button className='btn btn-primary btn-lg btn-block mb-5 waves-effect' type='submit'>Шукати</button>
               </form>
             </div>
           )
